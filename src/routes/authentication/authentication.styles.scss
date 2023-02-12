@@ -1,0 +1,62 @@
+.authentication-container {
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+@media (max-width: 960px) {
+  .authentication-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .sign-in-container{
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+@media (max-width: 418px) {
+  .authentication-container {
+    padding: 1rem;
+    .sign-in-container{
+      margin-bottom: 2.5rem;
+      h2{
+        font-size: 1.6rem;
+      }
+     form{
+       .form-input-label{
+        left: 40px;
+       }
+      input{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .buttons-container{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        button{
+          margin-bottom: 1rem;
+        }
+      }
+     }
+    }
+    .sign-up-container{
+      h2{
+        font-size: 1.6rem;
+      }
+      form{
+        .form-input-label{
+          left: 40px;
+         }
+        input{
+          width: 80%;
+          margin: 0 auto;
+        }
+       .buttons-container{
+         display: block;
+       }
+      }
+    }
+  }
+}

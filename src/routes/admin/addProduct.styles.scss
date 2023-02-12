@@ -1,0 +1,25 @@
+.admin{
+    display: flex;
+    justify-content: center;
+    & .add-product-to-cart{
+        & h2{
+            font-size: 2.6rem;
+        }
+        max-width: 650px;
+        margin: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin{
+        display: block;
+        justify-content: center;
+        & .add-product-to-cart{
+            & h2{
+                font-size: 2.3rem;
+            }
+            margin: 4rem;
+        }
+    }
+    
+}
